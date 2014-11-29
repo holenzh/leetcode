@@ -1,6 +1,7 @@
 package com.holen;
 
-import com.holen.remove_nth_node_from_end.Solution;
+import com.holen.symmetry_tree.Solution;
+
 
 
 
@@ -66,7 +67,7 @@ public class Main {
 		
 		System.out.println(Solution.isInterleaving(s1, s2, s3));*/
 		
-		ListNode node1 = new ListNode(1);
+		/*ListNode node1 = new ListNode(1);
 		ListNode node2 = new ListNode(2 , node1);
 		ListNode node3 = new ListNode(3 , node2);
 		ListNode node4 = new ListNode(4 , node3);
@@ -75,7 +76,18 @@ public class Main {
 		while(head!=null){
 			System.out.print(head.val + "  ");
 			head = head.next;
-		}
+		}*/
+		
+		TreeNode root = new TreeNode(1);
+		TreeNode node1 = new TreeNode(2);
+		TreeNode node2 = new TreeNode(2);
+		TreeNode node3 = new TreeNode(3);
+		TreeNode node4 = new TreeNode(3);
+		root.left = node1;
+		/*root.right = node2;
+		node1.left = node3;
+		node2.right = node4;*/
+		System.out.println(new Solution().isSymmetric(root));
 		
 	}
 
